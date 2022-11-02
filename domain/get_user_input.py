@@ -14,10 +14,13 @@ def get_user_option():
         correct_input = True
         if option == '1':
             make_coffee.make_coffee(coffee_type='espresso', c_coffee=coffee, c_water=water, c_milk=milk)
+            return True
         elif option == '2':
             make_coffee.make_coffee(coffee_type='latte', c_coffee=coffee, c_water=water, c_milk=milk)
+            return True
         elif option == '3':
             make_coffee.make_coffee(coffee_type='cappuccino', c_coffee=coffee, c_water=water, c_milk=milk)
+            return True
         elif option == 'report':
             print_report.print_report()
         elif option == 'off':
