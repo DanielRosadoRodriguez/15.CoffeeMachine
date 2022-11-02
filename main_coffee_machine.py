@@ -6,8 +6,7 @@ pm.print_startup_message()
 
 while True:
     om.option_menu()
-    option = gui.get_user_option()
-    if option == False:
+    keep_on = gui.get_user_option()
+    if not keep_on:
         print("turning off machine...")
         break
-
