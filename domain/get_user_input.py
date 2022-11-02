@@ -1,10 +1,12 @@
 from options import make_coffee
 from options import print_report
 
+
 def get_user_option():
-    option = input("Insert coffee that you want to chose: \n")
+
     correct_input = False
     while not correct_input:
+        option = input("Insert coffee that you want to chose: \n")
         correct_input = True
         if option == '1':
             make_coffee.make_coffee(coffee='espresso')
