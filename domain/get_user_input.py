@@ -23,6 +23,7 @@ def get_user_option():
             return True
         elif option == 'report':
             print_report.print_report()
+            return True
         elif option == 'off':
             return False
         else:
