@@ -13,13 +13,13 @@ def get_user_option():
         option = input("Insert coffee that you want to chose: \n")
         correct_input = True
         if option == '1':
-            make_coffee.make_coffee(coffee_type='espresso', c_coffee=coffee, c_water=water, c_milk=milk)
+            make_coffee.make_coffee(coffee_type='espresso')
             return True
         elif option == '2':
-            make_coffee.make_coffee(coffee_type='latte', c_coffee=coffee, c_water=water, c_milk=milk)
+            make_coffee.make_coffee(coffee_type='latte')
             return True
         elif option == '3':
-            make_coffee.make_coffee(coffee_type='cappuccino', c_coffee=coffee, c_water=water, c_milk=milk)
+            make_coffee.make_coffee(coffee_type='cappuccino')
             return True
         elif option == 'report':
             print_report.print_report()
