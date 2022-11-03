@@ -1,4 +1,4 @@
-from dictionaries import ingredients
+from dictionaries import coffee_current_values
 
 
 def print_report():
@@ -6,5 +6,6 @@ def print_report():
     the ingredients and money inside the machine"""
     print("--------")
     print("Report:")
-    for ingredient, quantity in ingredients.machine_ingredients.items():
+    for ingredient, quantity in coffee_current_values.machine_ingredients.items():
         print(f"{ingredient}: {quantity}")
+    print("--------")
